@@ -56,7 +56,7 @@
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('img/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url('https://gentle-dawn-44927.herokuapp.com/img/bg-01.jpg');">
 				</div>
 			</div>
 		</div>
