@@ -4,8 +4,8 @@
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="https://github.com/nouranelsakiely/heroku/tree/master/img/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="https://gentle-dawn-44927.herokuapp.com/img/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="https://gentle-dawn-44927.herokuapp.com//vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/animate/animate.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/css-hamburgers/hamburgers.min.css">
@@ -93,14 +93,14 @@
 	            else if (password != "" && user_name != ""){
 	                var formdata = $("#form-state").serialize();
 	                $.ajax({
-	                    url: 'https://github.com/nouranelsakiely/heroku/tree/master/Actions/signin.php',
+	                    url: 'https://gentle-dawn-44927.herokuapp.com/Actions/signin.php',
 	                    type: "post",
 	                    cache : false,
 	                    data: formdata,
 	                    success: function (data){
 	                        console.log(data);
 	                        if(data == 1){
-	                            window.location = "https://github.com/nouranelsakiely/heroku/tree/master/Views/addproduct.php";
+	                            window.location = "https://gentle-dawn-44927.herokuapp.com/Views/addproduct.php";
 	                        }
 	                        else{
 	                            $('#form_msg').html('invalid username or password');
