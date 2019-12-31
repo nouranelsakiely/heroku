@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="https://gentle-dawn-44927.herokuapp.com/img/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="https://gentle-dawn-44927.herokuapp.com//vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://gentle-dawn-44927.herokuapp.com/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/animate/animate.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/css-hamburgers/hamburgers.min.css">
