@@ -76,10 +76,11 @@
 	<script src="https://github.com/nouranelsakiely/heroku/tree/master/js/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
-	    $(document).ready(function(e){
-		    e.preventDefault();
+	    $(document).ready(function($){
 	        
-	        $('#submit').click(function(){
+	        $('#submit').click(function(e){
+		    e.preventDefault();
+			
 
 	            var user_name = $("#user_name").val();
 	            var password = $("#password").val();
