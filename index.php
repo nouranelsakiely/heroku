@@ -25,13 +25,11 @@
 						Login to continue
 					</span>
 					
-					
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="text" name="user_name" id="user_name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Username</span>
 					</div>
-					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" name="password" id="password">
