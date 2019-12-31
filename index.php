@@ -93,14 +93,14 @@
 	            else if (password != "" && user_name != ""){
 	                var formdata = $("#form-state").serialize();
 	                $.ajax({
-	                    url: 'signin.php',
+	                    url: 'https://github.com/nouranelsakiely/heroku/tree/master/Actions/signin.php',
 	                    type: "post",
 	                    cache : false,
 	                    data: formdata,
 	                    success: function (data){
 	                        console.log(data);
 	                        if(data == 1){
-	                            window.location = "Views/addproduct.php";
+	                            window.location = "https://github.com/nouranelsakiely/heroku/tree/master/Views/addproduct.php";
 	                        }
 	                        else{
 	                            $('#form_msg').html('invalid username or password');
