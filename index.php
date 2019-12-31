@@ -14,22 +14,32 @@
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/css/util.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/nouranelsakiely/heroku/tree/master/css/main2.css">
+	<style type="text/css">
+		#form_msg{
+            text-align: center;
+            padding-top: 10px;
+            color: red;
+            margin-left: 20px;
+        }
+	</style>
 </head>
 <body style="background-color: #666666;">
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" id="form-state">
 					<span class="login100-form-title p-b-43">
 						Login to continue
 					</span>
+					
 					
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="text" name="user_name" id="user_name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Username</span>
 					</div>
+					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" name="password" id="password">
@@ -39,13 +49,14 @@
 			
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" id="submit">
 							Login
 						</button>
+						<div id="form_msg"></div>
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('../img/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url('img/bg-01.jpg');">
 				</div>
 			</div>
 		</div>
@@ -63,6 +74,45 @@
 	<script src="https://github.com/nouranelsakiely/heroku/tree/master/vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="https://github.com/nouranelsakiely/heroku/tree/master/vendor/countdowntime/countdowntime.js"></script>
 	<script src="https://github.com/nouranelsakiely/heroku/tree/master/js/main.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function($){
+	        
+	        $('#submit').click(function(){
 
+	            var user_name = $("#user_name").val();
+	            var password = $("#password").val();
+	            
+	            if(user_name ==''){
+	                $('#form_msg').html('Please insert username');   
+	            }
+	            else if(password == ''){
+	                $('#form_msg').html('Please insert password');
+	                // e.preventDefault();     
+	            }
+	            else if (password != "" && user_name != ""){
+	                var formdata = $("#form-state").serialize();
+	                $.ajax({
+	                    url: 'signin.php',
+	                    type: "post",
+	                    cache : false,
+	                    data: formdata,
+	                    success: function (data){
+	                        console.log(data);
+	                        if(data == 1){
+	                            window.location = "Views/addproduct.php";
+	                        }
+	                        else{
+	                            $('#form_msg').html('invalid username or password');
+	                        }
+	                    }, 
+	                    error: function(data){
+	                        alert('failed');
+	                    }
+	                });
+	            }
+
+	        });
+	    });
+	</script>
 </body>
 </html>
