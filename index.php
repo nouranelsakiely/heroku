@@ -32,8 +32,6 @@
 					<span class="login100-form-title p-b-43">
 						Login to continue
 					</span>
-					
-					
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="text" name="user_name" id="user_name">
 						<span class="focus-input100"></span>
