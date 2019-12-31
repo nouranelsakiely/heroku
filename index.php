@@ -76,9 +76,7 @@
 	<script src="https://github.com/nouranelsakiely/heroku/tree/master/js/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
-	    $(document).ready(function($){
-	        
-	        $('#submit').click(function(e){
+	    $(document).on('click', '#submit', function(e) {
 		    e.preventDefault();
 			
 
@@ -114,7 +112,6 @@
 	                });
 	            }
 
-	        });
 	    });
 	</script>
 </body>
