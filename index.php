@@ -56,7 +56,7 @@
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('https://github.com/nouranelsakiely/heroku/blob/master/img/bg-01.jpg/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url('https://github.com/nouranelsakiely/heroku/blob/master/img/bg-01.jpg');">
 				</div>
 			</div>
 		</div>
